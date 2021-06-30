@@ -21,7 +21,7 @@ export default function Home({news, businessNews, healthData, TechData}) {
   return (
     <div>
       <Head>
-        <title>Create Next App</title>
+        <title>EvanWeb News</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
