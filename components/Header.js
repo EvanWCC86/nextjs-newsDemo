@@ -1,27 +1,48 @@
 
-
+import Link from 'next/link'
+import { TiSocialFacebook, TiSocialLinkedin, TiSocialTwitter, TiSocialSkypeOutline } from 'react-icons/ti';
 const Header = () => {
     return (
         <header>
-            <div>
-                <h1>EvanWeb-News</h1>
-                <form>
-                    <input type="text" placeholder="serarch" />
-                    <span>search icon</span>
-                </form>
-                <span>toggleicon</span>
-                <ul>
-                    <li><a>World</a></li>
-                    <li><a>US</a></li>
-                    <li><a>Canada</a></li>
-                    <li><a>Business</a></li>
-                    <li><a>Technology</a></li>
-                    <li><a>Entertainment</a></li>
-                    <li><a>Sports</a></li>
-                    <li><a>Science</a></li>
-                    <li><a>health</a></li>
-                </ul>
-            </div>
+            
+                <div className="header">
+                    <div className="container header_container">
+                        <p>June 25</p>
+                        <ul>
+                            <li>
+                                <Link href="/">Forums</Link>
+                            </li>
+                            <li>
+                                <Link href="/">Contact</Link>
+                            </li>
+                            <li>
+                                <Link href="/">Subscriber</Link>
+                            </li>
+                        </ul>
+                        <div className="social_icons">
+                            <TiSocialFacebook />
+                            <TiSocialLinkedin />
+                            <TiSocialTwitter />
+                            <TiSocialSkypeOutline />
+                            
+                        </div>
+                    </div>
+                </div>
+                <div className="brand">
+                    <div className="brand_container container">
+                        <div className="brand">
+                            <h1>EvanWeb</h1>
+                            <p>News</p>
+                        </div>
+                        <div className="brand_hero">
+                            <div className="hero_content">
+                                h1
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            
         </header>
     )
 }

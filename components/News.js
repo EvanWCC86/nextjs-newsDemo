@@ -1,23 +1,15 @@
+import React from 'react'
+import NewsCard from './NewsCard'
 
-
-const News = ( {article}) => {
-    const { urlToImage, author, source, title, publishedAt } = article
-    return (
-        <div>
-            <div>
-                <div>
-                    <img src={urlToImage} alt={author} />
-                </div>
-                <div>
-                    <p>{source.name}</p>
-                    <h3>{title}</h3>
-                    <div className="article-footer">
-                        <p>{publishedAt}</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    )
+const News = ({news, textOnImage, smallCard, largeCard }) => {
+  
+  return (
+    <>
+      {news.map((item) => (
+          <NewsCard item={item} key={item.title} textOnImage={textOnImage} largeCard={largeCard} smallCard={smallCard} image_zoneToBottom  />
+      ))}
+    </>
+  )
 }
 
 export default News
